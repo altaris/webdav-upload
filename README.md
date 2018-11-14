@@ -22,3 +22,38 @@ The URL where the `FILE` will be uploaded is thus
 ```
 $SERVER/$WEBDAV_PREFIX/$WEBDAV_USER/$WEBDAV_PATH
 ```
+
+# Example
+
+## As a drone plugin
+
+Assuming your drone repository has secrets `user`, `password`, and `server`:
+
+```yaml
+upload:
+  file: build/project.tar.gz
+  image: altaris/webdav-upload
+  secrets:
+    - source: user
+      target: USER
+    - source: password
+      target: PASSWORD
+    - source: server
+      target: SERVER
+  webdav_path: my/dope/project/project.tar.gz
+```
+
+or equivalently, if the server address isn't a secret:
+
+```yaml
+upload:
+  file: build/project.tar.gz
+  image: altaris/webdav-upload
+  secrets:
+    - source: user
+      target: USER
+    - source: password
+      target: PASSWORD
+  server: cloud.mcnope.com
+  webdav_path: my/dope/project/
+```
