@@ -13,6 +13,7 @@ The upload script reads the following environment variables:
 * `PASSWORD`: Password used to authenticate.
 * `SERVER`: URL to the WebDAV server.
 * `USER`: User used to authenticate.
+* `VERBOSE` (default: `no`): A non `yes` value is considered `no`. **God knows what information might get exposed, be carefule with this!**
 * `WEBDAV_PATH` (default: empty path): Path where the file should be uploaded.
 * `WEBDAV_PREFIX` (default: `remote.php/dav/files`): See after.
 * `WEBDAV_USER` (default: `USER`): User who owns the directory where the file should be uploaded.
