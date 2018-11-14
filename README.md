@@ -1,6 +1,10 @@
 webdav-upload
 =============
 
+[![Docker Build Status](https://img.shields.io/docker/build/altaris/webdav-upload.svg)](https://hub.docker.com/r/altaris/webdav-upload/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/altaris/webdav-upload.svg)](https://hub.docker.com/r/altaris/webdav-upload/)
+[![GitHub](https://img.shields.io/github/license/altaris/webdav-upload.svg)](https://choosealicense.com/licenses/mit/)
+
 A simple docker image to upload a file over WebDAV.
 
 The upload script reads the following environment variables:
