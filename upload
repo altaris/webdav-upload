@@ -24,7 +24,7 @@ WEBDAV_PREFIX="${WEBDAV_PREFIX:-remote.php/dav/files}"
 WEBDAV_USER="${WEBDAV_USER:-$USER}"
 WEBDAV_URL="$SERVER"/"$WEBDAV_PREFIX"/"$WEBDAV_USER"/"$WEBDAV_PATH"
 
-if [ "$VERBOSE" = "yes" ]; then;
+if [ "$VERBOSE" = "yes" ]; then
     VERBOSE_FLAG="--verbose"
     echo "
 --------------------------------------------------
