@@ -1,7 +1,15 @@
 #!/bin/sh
 
+FILE="${FILE:-$PLUGIN_FILE}"
+PASSWORD="${PASSWORD:-$PLUGIN_PASSWORD}"
+SERVER="${SERVER:-$PLUGIN_SERVER}"
+USER="${USER:-$PLUGIN_USER}"
+WEBDAV_PATH="${WEBDAV_PATH:-$PLUGIN_WEBDAV_PATH}"
+WEBDAV_PREFIX="${WEBDAV_PREFIX:-$PLUGIN_WEBDAV_PREFIX}"
+WEBDAV_USER="${WEBDAV_USER:-$PLUGIN_WEBDAV_USER}"
+
 if [ -z "$USER" ]; then
-    echo "No username provided... please user environment variable USER rto"
+    echo "No username provided... please user environment variable USER"
     exit 1
 elif [ -z "$SERVER" ]; then
     echo "No server url provided... please user environment variable SERVER"
