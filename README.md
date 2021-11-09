@@ -1,7 +1,6 @@
 webdav-upload
 =============
 
-[![Docker Build Status](https://img.shields.io/docker/build/altaris/webdav-upload.svg)](https://hub.docker.com/r/altaris/webdav-upload/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/altaris/webdav-upload.svg)](https://hub.docker.com/r/altaris/webdav-upload/)
 [![GitHub](https://img.shields.io/github/license/altaris/webdav-upload.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -13,7 +12,8 @@ The upload script reads the following environment variables:
 * `PASSWORD`: Password used to authenticate.
 * `SERVER`: URL to the WebDAV server.
 * `USER`: User used to authenticate.
-* `VERBOSE` (default: `no`): A non `yes` value is considered `no`. **God knows what information might get exposed, be carefule with this!**
+* `VERBOSE` (default: `no`): A non `yes` value is considered `no`. **God knows
+  what information might get exposed, be careful with this!**
 * `WEBDAV_PATH` (default: empty path): Path where the file should be uploaded.
 * `WEBDAV_PREFIX` (default: `remote.php/dav/files`): See after.
 * `WEBDAV_USER` (default: `USER`): User who owns the directory where the file should be uploaded.
