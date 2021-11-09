@@ -51,4 +51,4 @@ WEBDAV_PREFIX: $WEBDAV_PREFIX
 "
 fi
 
-curl --upload-file "$FILE" --user "$USER:$PASSWORD" $VERBOSE_FLAG "$WEBDAV_URL"
+curl --upload-file "$FILE" --user "$USER:$PASSWORD" "$VERBOSE_FLAG" "$WEBDAV_URL"
